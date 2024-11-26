@@ -1,0 +1,33 @@
+a) A primeira linha da matriz são as diferentes temperaturas em cada momento, já que as colunas são os diferentes momentos. Ou seja, no momento 1 a temperatura foi de 22 graus Celcius e assim sucessivamente.
+
+b) Como a segunda linha são as umadidades do solo nos diferentes momentos, devemos achar a média dos valores da segunda linha que é igual a 40,4
+
+c) Como a terceira linha representa a concenração de CO2, o valor dessa concentração no terceiro momento foi de 420 ppm
+
+d)
+int ambientData[3][5] = {
+    {22, 25, 23, 21, 24}, 
+    {45, 38, 42, 40, 37},  
+    {400, 380, 420, 410, 390} 
+};
+
+void setup() {
+    Serial.begin(9600); 
+
+    int somaTemperaturas = 0; 
+    int totalLeituras = 5;    
+
+    
+    for (int j = 0; j < totalLeituras; j++) {
+        somaTemperaturas += ambientData[0][j];
+    }
+
+    
+    float mediaTemperaturas = (float)somaTemperaturas / totalLeituras;
+
+    
+    Serial.print("Média de temperatura: ");
+    Serial.println(mediaTemperaturas);
+}
+
+
