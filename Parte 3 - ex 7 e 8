@@ -1,0 +1,5 @@
+7) O comando for faz com que o código percorra pelo vetor sensorReadings e quando for igual a 150, vai ocorrer o break encerrando o loop. Sendo muito útil evitando verificações desnecessarias, quando o valor esperado já foi obtido.
+
+8) sizeof(sensorData) retorna o tamanho total do vetor em bytes.
+sizeof(sensorData[0]) retorna o tamanho de um único elemento do vetor.
+A divisão calcula o número total de elementos no vetor.
