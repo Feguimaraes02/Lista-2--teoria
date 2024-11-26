@@ -1,0 +1,11 @@
+2) Esse código lê o valor do pino A1 do arduino e armazena esse avlor na posição 3 do vetor cameraData.
+
+3) Para iniciar um vetor float com esses valores , o códifica fica assim: 
+float temperaturas[] = {25.5, 26.0, 24.8, 27.3, 26.5};
+
+4) Esse código imprime os quatro primeiros valores do vetor ledPince.
+A saída será: 
+2
+3
+4
+5
